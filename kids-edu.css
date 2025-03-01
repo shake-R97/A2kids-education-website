@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared styles */
+.display-flex {
+    display: flex;
+}
+
+.white {
+    color: rgba(247, 247, 247, 1);
+}
+
+.sky-blue {
+    color: rgba(1, 172, 253, 1);
+}
+
+.orange {
+    color: rgba(254, 163, 1, 1);
+}
+
+.black {
+    color: rgba(17, 17, 17, 1);
+}
+
+.purple {
+    color: rgba(93, 88, 239, 1);
+}
+
+.title-2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.title-3 {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.hide {
+    display: none;
+}
+
+/* button */
+.button-1 {
+    background-color: orange;
+    color: white;
+    width: 160px;
+    height: 45px;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.button-2 {
+    background-color: rgba(17, 17, 17, 1);
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    width: 170px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* header section */
+
+.nav-bar {
+    max-width: 1260px;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.brand-1 {
+    justify-items: center;
+    margin-top: 0px;
+}
+
+.brand-1>h3 {
+    margin-top: 19px;
+    padding-left: 8px;
+}
+
+ul {
+    list-style: none;
+    gap: 30px;
+    text-align: center;
+    margin-top: 23px;
+}
+
+/* banner */
+
+.banner {
+    max-width: 1200px;
+    max-height: 700px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.slogan {
+    font-weight: 900;
+    font-size: 3.4rem;
+}
+
+.motto {
+    margin-top: 70px;
+}
+
+
+
+/* responsive section */
+
+/* Mobile Device */
+
+@media screen and (max-width:576px) {
+    .brand-1>h3 {
+        display: none;
+    }
+
+    .nav>li,
+    .button-1 {
+        display: none;
+    }
+
+    .brand-1>img {
+        width: 48px;
+        height: 48px;
+        padding-left: 12px;
+    }
+
+    .nav-bar {
+        border: 0.2px solid orange;
+        margin-top: 0;
+        padding: 14px 20px;
+    }
+
+    .size-6 {
+        display: block;
+        padding-top: 6px;
+        padding-right: 21px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin-top: 90px;
+        gap: 2px;
+    }
+
+    .superboy>img {
+        max-width: 360px;
+        max-height: 440px;
+
+    }
+
+    .motto {
+        margin-top: 0;
+    }
+
+    .slogan {
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+    .title-3 {
+        font-weight: 500;
+        font-size: 1.1rem;
+        padding: 0  14px;
+    }
+}
