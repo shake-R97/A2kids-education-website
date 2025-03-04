@@ -73,6 +73,16 @@
     margin-top: 10px;
 }
 
+.oval-button {
+    border-style: none;
+    background-color: orange;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
 /* header section */
 
 .nav-bar {
@@ -123,6 +133,87 @@ ul {
 .motto {
     margin-top: 70px;
 }
+
+
+/* curriculam section design */
+
+.standard {
+    background-image: url('assets/bg.png');
+    
+}
+
+.curriculam-title {
+    text-align: center;
+    color: black;
+    font-size: 2.9rem;
+    font-weight: 900;
+    margin-top: 100px;
+    
+}
+
+.curriculam {
+    max-width: 1160px;
+    max-height: 485px;
+    margin: 0 auto;
+    gap: 30px;
+    margin-top: 40px;
+
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    width: 360px;
+    height: 370px;
+    border-radius: 16px;
+    padding: 10px;
+
+}   
+
+.title-4 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(128, 128, 128, 1);
+}
+
+.title-5 {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+   
+.card-1 {
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) , rgba(222, 245, 255, 1) )   ;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05) ;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.card-2 {
+    background: linear-gradient(to bottom, rgba(255, 244, 220, 1) , rgba(255, 255, 255, 0)  )   ;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05) ;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.card-3 {
+    background: linear-gradient(to bottom, rgba(238, 225, 255, 1) , rgba(255, 255, 255, 0)  )   ;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05) ;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.pointer {
+    justify-content: center;
+    gap: 10px;
+    margin: 80px 0px 65px 0px; 
+}
+
+ 
+
+
 
 
 
@@ -191,4 +282,18 @@ ul {
         font-size: 1.1rem;
         padding: 0  14px;
     }
+
+    /* curriculam section responsive */
+
+    .curriculam {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .pointer {
+        display: none;
+    }
+
+    
 }
