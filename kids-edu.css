@@ -190,7 +190,7 @@ ul {
 }
    
 .card-1 {
-    background: linear-gradient(to top, rgba(255, 255, 255, 1) , rgba(222, 245, 255, 1) )   ;
+    background-image: linear-gradient(to top, white , rgba(0, 183, 255, 0.2) )   ;
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05) ;
     align-items: center;
     text-align: center;
@@ -350,6 +350,10 @@ ul {
     color: white;
     padding-bottom: 10px;
     text-align: left;
+}
+
+.footer-about >ul {
+    padding-left: 0px;
 }
 
 
