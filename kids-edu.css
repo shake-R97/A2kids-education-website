@@ -139,6 +139,8 @@ ul {
 
 .standard {
     background-image: url('assets/bg.png');
+    /* max-width: 1900px;
+    max-height: 1100px; */
     
 }
 
@@ -163,8 +165,8 @@ ul {
 .card-1,
 .card-2,
 .card-3 {
-    width: 360px;
-    height: 370px;
+    max-width: 360px;
+    max-height: 370px;
     border-radius: 16px;
     padding: 10px;
 
@@ -179,6 +181,12 @@ ul {
 .title-5 {
     font-weight: bold;
     font-size: 1.6rem;
+}
+
+.title-6 {
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding-left: 10px;
 }
    
 .card-1 {
@@ -213,7 +221,97 @@ ul {
 
  
 
+/* Our Stories section design */
 
+.main-story-container {
+    max-width: 1160px ;
+    max-height: 630px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+   
+}
+
+.story-container {
+    
+    display: grid;
+    grid-template-columns:repeat(2 , 1fr);
+    gap: 20px;
+}
+
+.story-box-1 {
+    width: 520px;
+    height: 620px;
+    border: 3px solid rgb(255, 255, 255) ;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.batch-1 {
+    background-color:rgba(60, 216, 232, 1) ;
+    border-radius: 47px;
+    border-style: none;
+    color: white ;
+    font-size: 0.8rem;
+    padding: 8px;
+}
+
+.batch-1-1 {
+    margin: -20px 0px 0px 15px 
+}
+
+.batch-2 {
+    background-color: rgba(149, 178, 38, 1);
+    border-radius: 47px;
+    border-style: none;
+    color: white ;
+    font-size: 0.8rem;
+    padding: 8px;
+    margin: -20px 0px 0px 15px;
+}
+
+.batch-3 {
+    background-color: rgba(93, 88, 240, 1);
+    border-radius: 47px;
+    border-style: none;
+    color: white ;
+    font-size: 0.8rem;
+    padding: 8px;
+    margin: -20px 0px 0px 15px;
+}
+
+.story-box {
+    width: 290px;
+    height: 301px;
+    border-radius: 16px;
+    font-size: 0.2rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 1) ;
+  
+}
+
+.story-box > h5 {
+    padding-left: 20px;
+}
+
+.main-story-container , img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.our-stories {
+   
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3),rgba(254, 163, 1, 0.1)), url('assets/bg.png');
+    /* max-width: 1900px;
+    max-height: 1200px; */
+   
+}
+.story-button {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px 60px 0px;
+}
 
 
 
@@ -249,10 +347,10 @@ ul {
         padding-right: 21px;
     }
 
-    body {
+      body {
         margin: 0;
         padding: 0;
-    }
+    }  
 
     .banner {
         flex-direction: column-reverse;
@@ -288,12 +386,49 @@ ul {
     .curriculam {
         flex-direction: column;
         align-items: center;
+        
        
     }
 
+    .card-1,
+    .card-3, .read {
+        padding-bottom: 20px;
+    }
+
+    
     .pointer {
         display: none;
     }
 
-    
+    /* Our Stories section */
+     
+   
+    .story-box-1 {
+        display: none;
+    }
+
+   .main-story-container {
+     flex-direction: column;
+   }
+
+   .our-stories {
+    margin-top: 960px;
+   }
+
+   .story-container {
+    grid-template-columns: repeat(2 , 0.1fr);
+    align-items: center;
+    justify-content: center;
+   }
+
+   .story-box {
+    max-width: 180px;
+    max-height: 220px;
+   }
+
+   .story-box , img {
+    width: 170px;
+   }
+
+
 }
